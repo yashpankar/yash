@@ -1,0 +1,60 @@
+pipeline {
+    agent any
+    environment {
+        name = "yash"
+    }
+    parameters {
+        string(name: "person", defaultValue: "yash pankar" ,description: "please type your name")
+        booleanParam(name: "male", defaultValue: true , description: "")
+        choice(name: "city", choices: ["mhow","indore","pithampur"], description: "")
+    }
+    
+    stages ("Environment Variable"){
+        stage('pull') {
+            steps {
+                echo 'hello yash'
+               sh "echo '${name}'"
+            }
+        }
+        stage("build") {
+            steps {
+               sh "echo '${BUILD_ID}'"
+            }
+        }
+        stage("multiplecammand") {
+            steps {
+                sh '''
+                pwd
+                ls 
+                date
+                
+                '''
+            }
+        }
+        stage("continue"){
+            input {
+                message "should i continue"
+                ok "you should continue"
+            }
+            steps{
+                echo "first message"
+            }
+        }
+        stage("final"){
+            steps{
+                sh "echo ${BUILD_ID}"
+            }
+        }
+    }
+    post{
+        always{
+            echo "this for every time"
+        }
+        failure{
+            echo "this is failed"
+        }
+        success{
+            echo "this is for passed"
+        }
+    }
+}    
