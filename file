@@ -1,0 +1,78 @@
+Script started on 2024-03-08 09:08:03+00:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="94" LINES="23"]
+[?2004h]0;ubuntu@ip-172-31-4-242: /usr/share/tomcat9/webapps[01;32mubuntu@ip-172-31-4-242[00m:[01;34m/usr/share/tomcat9/webapps[00m$ mv /[Kstudent.war /var/lib/tomcat9/webapps/
+[?2004lmv: cannot move 'student.war' to '/var/lib/tomcat9/webapps/student.war': Permission denied
+[?2004h]0;ubuntu@ip-172-31-4-242: /usr/share/tomcat9/webapps[01;32mubuntu@ip-172-31-4-242[00m:[01;34m/usr/share/tomcat9/webapps[00m$ mv student.war /var/lib/tomcat9/webapps/[1@s[1@udmv student.war /var/lib/tomcat9/webapps/ [A]0;ubuntu@ip-172-31-4-242: /usr/share/tomcat9/webapps[01;32mubuntu@ip-172-31-4-242[00m:[01;34m/usr/share/tomcat9/webapps[00m$ [C[C[Comv student.war /var/lib/tomcat9/webapps/[A]0;ubuntu@ip-172-31-4-242: /usr/share/tomcat9/webapps[01;32mubuntu@ip-172-31-4-242[00m:[01;34m/usr/share/tomcat9/webapps[00m$ [C[C[C[C mv student.war /var/lib/tomcat9/webapps/[A]0;ubuntu@ip-172-31-4-242: /usr/share/tomcat9/webapps[01;32mubuntu@ip-172-31-4-242[00m:[01;34m/usr/share/tomcat9/webapps[00m$ [C[C[C[C[C
+
+[?2004l[?2004h]0;ubuntu@ip-172-31-4-242: /usr/share/tomcat9/webapps[01;32mubuntu@ip-172-31-4-242[00m:[01;34m/usr/share/tomcat9/webapps[00m$ cd li[K[K[K[K[Kcd ..
+[?2004l[?2004h]0;ubuntu@ip-172-31-4-242: /usr/share/tomcat9[01;32mubuntu@ip-172-31-4-242[00m:[01;34m/usr/share/tomcat9[00m$ ls
+[?2004l[0m[01;34mbin[0m  [01;34metc[0m  [01;34mlib[0m  logrotate.template  [01;34mwebapps[0m
+[?2004h]0;ubuntu@ip-172-31-4-242: /usr/share/tomcat9[01;32mubuntu@ip-172-31-4-242[00m:[01;34m/usr/share/tomcat9[00m$ cd bin/
+[?2004l[?2004h]0;ubuntu@ip-172-31-4-242: /usr/share/tomcat9/bin[01;32mubuntu@ip-172-31-4-242[00m:[01;34m/usr/share/tomcat9/bin[00m$ ls
+[?2004l[0m[01;31mbootstrap.jar[0m       [01;32mciphers.sh[0m     [01;32mdigest.sh[0m        [01;32mshutdown.sh[0m      [01;32mtool-wrapper.sh[0m
+catalina-tasks.xml  [01;32mconfigtest.sh[0m  [01;32mmakebase.sh[0m      [01;32mstartup.sh[0m       [01;32mversion.sh[0m
+[01;32mcatalina.sh[0m         [01;32mdaemon.sh[0m      [01;32msetclasspath.sh[0m  [01;36mtomcat-juli.jar[0m
+[?2004h]0;ubuntu@ip-172-31-4-242: /usr/share/tomcat9/bin[01;32mubuntu@ip-172-31-4-242[00m:[01;34m/usr/share/tomcat9/bin[00m$ ./catalina.sh 
+[?2004lUsing CATALINA_BASE:   /usr/share/tomcat9
+Using CATALINA_HOME:   /usr/share/tomcat9
+Using CATALINA_TMPDIR: /usr/share/tomcat9/temp
+Using JRE_HOME:        /usr
+Using CLASSPATH:       /usr/share/tomcat9/bin/bootstrap.jar:/usr/share/tomcat9/bin/tomcat-juli.jar
+Using CATALINA_OPTS:   
+Usage: catalina.sh ( commands ... )
+commands:
+  debug             Start Catalina in a debugger
+  debug -security   Debug Catalina with a security manager
+  jpda start        Start Catalina under JPDA debugger
+  run               Start Catalina in the current window
+  run -security     Start in the current window with security manager
+  start             Start Catalina in a separate window
+  start -security   Start in a separate window with security manager
+  stop              Stop Catalina, waiting up to 5 seconds for the process to end
+  stop n            Stop Catalina, waiting up to n seconds for the process to end
+  stop -force       Stop Catalina, wait up to 5 seconds and then use kill -KILL if still running
+  stop n -force     Stop Catalina, wait up to n seconds and then use kill -KILL if still running
+  configtest        Run a basic syntax check on server.xml - check exit code for result
+  version           What version of tomcat are you running?
+Note: Waiting for the process to end and use of the -force option require that $CATALINA_PID is defined
+[?2004h]0;ubuntu@ip-172-31-4-242: /usr/share/tomcat9/bin[01;32mubuntu@ip-172-31-4-242[00m:[01;34m/usr/share/tomcat9/bin[00m$ ls
+[?2004l[0m[01;31mbootstrap.jar[0m       [01;32mciphers.sh[0m     [01;32mdigest.sh[0m        [01;32mshutdown.sh[0m      [01;32mtool-wrapper.sh[0m
+catalina-tasks.xml  [01;32mconfigtest.sh[0m  [01;32mmakebase.sh[0m      [01;32mstartup.sh[0m       [01;32mversion.sh[0m
+[01;32mcatalina.sh[0m         [01;32mdaemon.sh[0m      [01;32msetclasspath.sh[0m  [01;36mtomcat-juli.jar[0m
+[?2004h]0;ubuntu@ip-172-31-4-242: /usr/share/tomcat9/bin[01;32mubuntu@ip-172-31-4-242[00m:[01;34m/usr/share/tomcat9/bin[00m$ cd ..
+[?2004l[?2004h]0;ubuntu@ip-172-31-4-242: /usr/share/tomcat9[01;32mubuntu@ip-172-31-4-242[00m:[01;34m/usr/share/tomcat9[00m$ ls
+[?2004l[0m[01;34mbin[0m  [01;34metc[0m  [01;34mlib[0m  logrotate.template  [01;34mwebapps[0m
+[?2004h]0;ubuntu@ip-172-31-4-242: /usr/share/tomcat9[01;32mubuntu@ip-172-31-4-242[00m:[01;34m/usr/share/tomcat9[00m$ cd webapps/;[K
+[?2004l[?2004h]0;ubuntu@ip-172-31-4-242: /usr/share/tomcat9/webapps[01;32mubuntu@ip-172-31-4-242[00m:[01;34m/usr/share/tomcat9/webapps[00m$ ls
+[?2004l[?2004h]0;ubuntu@ip-172-31-4-242: /usr/share/tomcat9/webapps[01;32mubuntu@ip-172-31-4-242[00m:[01;34m/usr/share/tomcat9/webapps[00m$ ls
+[?2004l[?2004h]0;ubuntu@ip-172-31-4-242: /usr/share/tomcat9/webapps[01;32mubuntu@ip-172-31-4-242[00m:[01;34m/usr/share/tomcat9/webapps[00m$ cd ..
+[?2004l[?2004h]0;ubuntu@ip-172-31-4-242: /usr/share/tomcat9[01;32mubuntu@ip-172-31-4-242[00m:[01;34m/usr/share/tomcat9[00m$ ls
+[?2004l[0m[01;34mbin[0m  [01;34metc[0m  [01;34mlib[0m  logrotate.template  [01;34mwebapps[0m
+[?2004h]0;ubuntu@ip-172-31-4-242: /usr/share/tomcat9[01;32mubuntu@ip-172-31-4-242[00m:[01;34m/usr/share/tomcat9[00m$ sudo mv webapps/
+[?2004lmv: missing destination file operand after 'webapps/'
+Try 'mv --help' for more information.
+[?2004h]0;ubuntu@ip-172-31-4-242: /usr/share/tomcat9[01;32mubuntu@ip-172-31-4-242[00m:[01;34m/usr/share/tomcat9[00m$ ls
+[?2004l[0m[01;34mbin[0m  [01;34metc[0m  [01;34mlib[0m  logrotate.template  [01;34mwebapps[0m
+[?2004h]0;ubuntu@ip-172-31-4-242: /usr/share/tomcat9[01;32mubuntu@ip-172-31-4-242[00m:[01;34m/usr/share/tomcat9[00m$ lssudo mv webapps/[K
+[?2004lmv: missing destination file operand after 'webapps'
+Try 'mv --help' for more information.
+[?2004h]0;ubuntu@ip-172-31-4-242: /usr/share/tomcat9[01;32mubuntu@ip-172-31-4-242[00m:[01;34m/usr/share/tomcat9[00m$ las
+[?2004lCommand 'las' not found, did you mean:
+  command 'as' from deb binutils (2.38-4ubuntu2.3)
+  command 'cas' from deb amule-utils (1:2.3.3-2)
+  command 'als' from deb atool (0.39.0-11)
+  command 'last' from deb util-linux (2.37.2-4ubuntu3)
+  command 'les' from deb atm-tools (1:2.5.1-4build2)
+  command 'ls' from deb coreutils (8.32-4.1ubuntu1)
+  command 'lrs' from deb lrslib (0.71a-1)
+  command 'lvs' from deb lvm2 (2.03.11-2.1ubuntu4)
+  command 'kas' from deb kas (2.6.3-2)
+  command 'laps' from deb epix (1.2.21-2)
+Try: sudo apt install <deb name>
+[?2004h]0;ubuntu@ip-172-31-4-242: /usr/share/tomcat9[01;32mubuntu@ip-172-31-4-242[00m:[01;34m/usr/share/tomcat9[00m$ ls
+[?2004l[0m[01;34mbin[0m  [01;34metc[0m  [01;34mlib[0m  logrotate.template  [01;34mwebapps[0m
+[?2004h]0;ubuntu@ip-172-31-4-242: /usr/share/tomcat9[01;32mubuntu@ip-172-31-4-242[00m:[01;34m/usr/share/tomcat9[00m$ lsassudo mv webapps[C[1P webapps[1P webapps[1Pwebapps[1P webapps[C webapps[1Pwebappso webapps[C webappsr webappsm webapps[C webapps
+[?2004lrm: cannot remove 'webapps': Is a directory
+[?2004h]0;ubuntu@ip-172-31-4-242: /usr/share/tomcat9[01;32mubuntu@ip-172-31-4-242[00m:[01;34m/usr/share/tomcat9[00m$ sudo rm  webapps[1@-[1P[C[C webapps[1@-[1@f
+[?2004lrm: cannot remove 'webapps': Is a directory
+[?2004h]0;ubuntu@ip-172-31-4-242: /usr/share/tomcat9[01;32mubuntu@ip-172-31-4-242[00m:[01;34m/usr/share/tomcat9[00m$ ls
+[?2004l[0m[01;34mbin[0m  [01;34metc[0m  [01;34mlib[0m  logrotate.template  [01;34mwebapps[0m
