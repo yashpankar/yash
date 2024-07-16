@@ -36,7 +36,7 @@
 | Parameter               | Description                                |Default   |
 | ----------------------- | ------------------------------------------ | --------- |
 | namespace               | Namespace for deployment                   | default   |
-| entryPointCommand       | specific command to always run when the container starts |- python / /home/queumonitor/code/main.py 
+| entryPointCommand       | specific command to always run when the container starts |- python \ /home/queumonitor/code/main.py 
 | Replicacount            | For availability                           | 2         |
 | nameOverride            |replaces the name of the chart in the Chart.yaml file | metric-exporter
 |fullnameOverride         | completely replaces the generated name  | stream-metric-exporter
