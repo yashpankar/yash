@@ -61,7 +61,7 @@
 |livenesscheck.periodSeconds   | specifies the interval to wait between liveness probe checks | 30
 
 
-  ####  The Following table lists are  configurable Environment Variables 
+  ####  The Following table lists the  configurable Environment Variables 
   
 | KEY                                   | VALUE                                     |
 | ------------------------------------- | ----------------------------------------- |
