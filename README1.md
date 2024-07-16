@@ -2,7 +2,7 @@
 
 ### This project provides template Helm Charts for deploying  Metric-Exporter application on Kubernetes .
 ### The templates require your application to built into a Docker image. 
-#### This helm chart Deploy by jenkins
+#### This helm chart Deploy by jenkins 
 
 **This project provides the following files:**
 | File                                                 | Description                                                             |
@@ -82,14 +82,14 @@
 | envVars.TRAIN_CG                      | stage-train-cg-01                         |
 | envVars.TRAIN_QUEUE                   | stage-train-01                            |
 
-#### you can add environment variables at the time of apply by this cammand 
+#### you can add environment variables at the time of apply by this command
 
 ```
 helm -n $PROD_NAMESPACE upgrade --install \
 --set env.<key1>=<value1> --set env.<key2>=<value2> \
 --set image.repository=${PROD_ACR_LOGIN_SERVER}/${REPO_NAME}\
 --set image.tag=${MAJOR_VERSION}.${BUILD_NUMBER} \
-$RELEASE_NAME $CHART_DIR -f $PROD_VALUES
+RELEASE_NAME $CHART_DIR -f $PROD_VALUES
 ```
 
   
@@ -116,6 +116,7 @@ $RELEASE_NAME $CHART_DIR -f $PROD_VALUES
  This deploys and runs your application in Kubernetes, and prints the following text to the console:
  
  Congratulations, you have deployed your  Application to Kubernetes using Helm!
+ 
 
 2. To verify your application is running, run the following  commands 
     ` kubectl get pod --namespace default -o json `
@@ -125,4 +126,6 @@ $RELEASE_NAME $CHART_DIR -f $PROD_VALUES
 
 3) Uninstalling your Application
      Helm 
-    
+    ```
+    helm uninstall <RELEASE_NAME> 
+    ```
