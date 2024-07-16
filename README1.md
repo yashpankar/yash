@@ -46,8 +46,7 @@
 | resources.limits.cpu    | CPU resource limits                        | 50m       |
 | resources.limits.memory | Memory resource limits                     | 100Mi     |
 | resources.requests.cpu  | CPU resource request                 			| 50m
-| resources.requests.memory|Memory resource request | 100MI 
-|
+| resources.requests.memory|Memory resource request | 100MI |
 | service.port            | TCP Port for this service                  | 8000      |
 | service.type            | Kubernetes service type exposing port      | ClusterIP |
 |   securityContext.runAsuser             | which user do you want to run in container | 1000      |
