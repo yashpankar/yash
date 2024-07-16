@@ -41,7 +41,7 @@
 | nameOverride            |replaces the name of the chart in the Chart.yaml file | metric-exporter
 |fullnameOverride         | completely replaces the generated name  | stream-metric-exporter
 | image.pullPolicy        | Image pull policy                          | Always    |
-| image.repository        | image repository                           |   repository.image.tag      |
+| image.repository        | image repository                           |   {PROD_ACR_LOGIN_SERVER}/${REPO_NAME}      |
 | image.tag               | Image tag                                  | latest    |
 | resources.limits.cpu    | CPU resource limits                        | 50m       |
 | resources.limits.memory | Memory resource limits                     | 100Mi     |
@@ -82,7 +82,17 @@
 | envVars.TRAIN_CG                      | stage-train-cg-01                         |
 | envVars.TRAIN_QUEUE                   | stage-train-01                            |
 
-   
+#### you can add environment variables at the time of apply by this cammand 
+
+```
+helm -n $PROD_NAMESPACE upgrade --install \
+--set env.<key1>=<value1> --set env.<key2>=<value2> \
+--set image.repository=${PROD_ACR_LOGIN_SERVER}/${REPO_NAME}\
+--set image.tag=${MAJOR_VERSION}.${BUILD_NUMBER} \
+$RELEASE_NAME $CHART_DIR -f $PROD_VALUES
+```
+
+  
 
 
 ## Using the Chart to deploy your Application to Kubernetes
@@ -94,11 +104,17 @@
      Helm 
     
 
-`helm -n <namespace> --install <release_name> <Chart_Dir>`
+```
+helm -n $PROD_NAMESPACE upgrade --install \
+--set image.repository=${PROD_ACR_LOGIN_SERVER}/${REPO_NAME}\
+--set image.tag=${MAJOR_VERSION}.${BUILD_NUMBER} \
+$RELEASE_NAME $CHART_DIR -f $PROD_VALUES
+```
 
 
 
  This deploys and runs your application in Kubernetes, and prints the following text to the console:
+ 
  Congratulations, you have deployed your  Application to Kubernetes using Helm!
 
 2. To verify your application is running, run the following  commands 
@@ -109,4 +125,4 @@
 
 3) Uninstalling your Application
      Helm 
-    ` helm install <Realease_name> `.
+    
