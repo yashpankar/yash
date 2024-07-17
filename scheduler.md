@@ -34,7 +34,7 @@
 | ----------------------- | ------------------------------------------ | --------- |
 | namespace               | Namespace for deployment                   | default   |
 | entryPointCommand       | specific command to always run when the container starts |- python  \  
- /home/process-scheduler/code/main.py  
+ /home/processscheduler/code/main.py  
 | Replicacount            | For availability                           | 2         |
 | nameOverride            |replaces the name of the chart in the Chart.yaml file | scheduler
 |fullnameOverride         | completely replaces the generated name  | process-scheduler
