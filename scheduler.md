@@ -119,9 +119,10 @@ $RELEASE_NAME $CHART_DIR -f $PROD_VALUES
  
 
 2. To verify your application is running, run the following  commands 
-    ` kubectl get pod --namespace default -o json `
-    `kubectl get svc --namespace default -o json`
-`kubectl get configmap --namespace default -o json`
+    ``` kubectl get pod --namespace default -o json 
+        kubectl get svc --namespace default -o json
+        kubectl get configmap --namespace default -o json
+    ```
 
 
 3) Uninstalling your Application
